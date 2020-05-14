@@ -1,3 +1,5 @@
 on post-fs-data
+    chown system system /sys/class/power_supply/battery/battery_charging_enabled
+    chown system system /sys/class/power_supply/battery/charging_enabled
     mkdir /data/ssh 0750 root shell
     mkdir /data/ssh/empty 0600 root shell
